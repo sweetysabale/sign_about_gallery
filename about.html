@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    max-height: 70px;
+        }
+        
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+        
+    width: 120px; /* Set the logo width */
+    height: 120px; /* Set the logo height */
+    margin-right: -18px;
+    filter: invert(1);
+        }
+        .navbar .text {
+            font-size: 24px;
+            font-weight: bold;
+            
+        }
+        .navbar .tabs {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .navbar .tabs a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .navbar .tabs a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .dropdown button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .navbar .dropdown:hover button {
+            background-color: #575757;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar .tabs {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .navbar .tabs a {
+                padding: 10px;
+                width: 100%;
+                text-align: left;
+            }
+            .navbar .dropdown {
+                width: 100%;
+            }
+            .navbar .dropdown button {
+                width: 100%;
+                text-align: left;
+            }
+            .navbar .dropdown-content {
+                min-width: 100%;
+            }
+        }
+        
+        .team-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .team-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .team-container {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .team-member h2 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .team-member p.title {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap:0px;
+        }
+
+        .social-links img{
+                width:45px;
+                height:45px;
+        }
+        .social-links a {
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo1-Photoroom.png"  alt="Logo"></div>
+            <div class="text">Cool The Globe</div>
+        
+        <div class="tabs">
+            <a href="#">Home</a>
+            <a href="#">Promises</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </div>
+        <div class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Login</a>
+                <a href="#">Logout</a>
+                <a href="#">My Score</a>
+            </div>
+        </div>
+    </div>
+
+<div class="team-section">
+    <h1>Our Perfect Team</h1>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="sweety1.jpg" alt="Vaishnavi Sabale">
+            <h2>Vaishnavi Sabale</h2>
+            <p class="title">Designer</p>
+            
+            <div class="social-links">
+                <a href="https://wa.me/7066356842"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="linked_in.png" alt="Linked in"></a>
+                <a href="https://www.instagram.com/_sweenavi_"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="radhika.jpg" alt="Radhika Kshirsagar">
+            <h2>Radhika Kshirsagar</h2>
+            <p class="title">Manager</p>
+            <div class="social-links">
+                <a href="https://wa.me/9370734531"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="twitter.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/radhaa.k10"><img src="instagram.png" alt="WhatsApp"></a>
+                <a href="https://www.linkedin.com/in/radhika-kshirsagar-b14343299"><img src="linked_in.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="Bhakti.jpg" alt="Bhakti Gaikwad">
+            <h2>Bhakti Gaikwad</h2>
+            <p class="title">Programming Guru</p>
+            <div class="social-links">
+                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="linked_in.png" alt="Linked in"></a>
+                <a href="#"><img src="telegram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="rajeshree.jpg" alt="Rajashri Lakde">
+            <h2>Rajashri Lakde</h2>
+            <p class="title">Sales Manager</p>
+            <div class="social-links">
+                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="linked_in.png" alt="Linked in"></a>
+                <a href="https://www.instagram.com/rajshri__006"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
